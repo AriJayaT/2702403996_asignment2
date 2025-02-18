@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>TrioWads Final Project</title>
+  <!-- Link to your CSS file -->
+  <link rel="stylesheet" href="style.css" />
+  <!-- Link to your JS file (defer so it loads after HTML) -->
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <header>
+    <nav class="navbar">
+      <!-- Brand / Logo -->
+      <div class="nav-brand">TrioWads</div>
+
+      <!-- Hamburger Toggle Button -->
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+        <span class="hamburger"></span>
+      </button>
+
+      <!-- Navigation Links -->
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="ari.html">Ari</a></li>
+        <li><a href="galih.html">Galih</a></li>
+        <li><a href="wallace.html">Wallace</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <!-- Main Content -->
+  <main>
+    <!-- Intro Section -->
+    <section id="intro">
+      <h1>Welcome to TrioWads Final Project Page</h1>
+      <p>
+        We are a group of three: 
+        <strong>Ari Jaya Teguh (2702403996)</strong>, 
+        <strong>Galih Putra Aditama (2602227421)</strong>, 
+        <strong>Wallace Loius Tjang (2602169705)</strong>.
+      </p>
+    </section>
+
+    <!-- Previous Projects Section -->
+    <section id="previousProjects">
+      <h2>Previous Projects</h2>
+
+      <!-- Project 1 -->
+      <div class="previous-project-item">
+        <img class="project-image" src="TechSpecs.png" alt="TechSpecs Image">
+        <div>
+          <strong>TechSpecs</strong> — A web application that recommends a laptop or PC based on your needs and budget
+          <br />
+          <a href="https://github.com/ArielBOBE/HCI-Final-Project.git" target="_blank">Repo</a> |
+          <a href="https://arielbobe.github.io/HCI-Final-Project/" target="_blank">Website</a>
+        </div>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="previous-project-item">
+        <img class="project-image" src="encrypto.png" alt="Encrypto Image">
+        <div>
+          <strong>Encrypto</strong> — An application that can encrypt a docx file using a single button and decrypt it back
+          <br />
+          <a href="https://github.com/Qyuzet/java-document-cryptographic-app--encrypto" target="_blank">Repo</a>
+        </div>
+      </div>
+
+      <!-- Project 3 -->
+      <div class="previous-project-item">
+        <img class="project-image" src="air_quality.png" alt="AirQualityPred Image">
+        <div>
+          <strong>AirQualityPrediction</strong> — A web application that predicts the air quality using multiple AI models (GRU, CNN, LSTM, etc.)
+          <br />
+          <a href="https://github.com/brishar0n/AirQualityPred-Frontend.git" target="_blank">Repo</a> |
+          <a href="https://air-quality-pred-frontend.vercel.app" target="_blank">Website</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Final Project Section -->
+    <section id="finalProject">
+      <h2>Our Final Project Plan</h2>
+      <p>Title: <span class="placeholder">[Title to be decided]</span></p>
+      <p>Plan: <span class="placeholder">[Plan details to be decided]</span></p>
+      <p>
+        This project will make helpdesk ticketing system. The system is for a buying service company called "Yippaws". The company mostly give service for the item Jellycat.
+        It can also provide services from Korea, Japan, Australia, Singapore, Malaysia, America, and United Kingdom.
+      </p>
+    </section>
+
+    <!-- Rating System Section -->
+    <section id="ratingSystem">
+      <h2>Rate Our Project Idea</h2>
+      <div class="rating-container">
+        <span class="star" data-value="1">&#9733;</span>
+        <span class="star" data-value="2">&#9733;</span>
+        <span class="star" data-value="3">&#9733;</span>
+        <span class="star" data-value="4">&#9733;</span>
+        <span class="star" data-value="5">&#9733;</span>
+      </div>
+      <p id="ratingResult">Your rating: 0</p>
+    </section>
+  </main>
+  
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 TrioWads. All rights reserved.</p>
+  </footer>
+</body>
+</html>

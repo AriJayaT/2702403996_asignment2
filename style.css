@@ -1,0 +1,226 @@
+/* ===== Global Resets & Base ===== */
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;
+  color: #333;
+  height: 100%;
+}
+
+/* Make body a flex container to keep footer at the bottom if content is short */
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  text-align: left;
+}
+
+/* The main content grows to fill space between header and footer */
+main {
+  flex: 1 0 auto;
+  padding: 90px 20px 40px; /* Top padding so content doesn't hide behind navbar */
+  max-width: 1000px;
+  margin: 0 auto; /* Center the content area */
+}
+
+/* ===== Navigation Bar ===== */
+.navbar {
+  background: linear-gradient(90deg, #333, #444);
+  position: fixed;
+  top: 0; 
+  left: 0; 
+  right: 0; 
+  height: 60px;
+  display: flex;
+  align-items: center;
+  z-index: 999; /* Ensure nav stays on top */
+  padding: 0 20px;
+}
+
+/* Brand/Logo */
+.nav-brand {
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-right: auto;
+  letter-spacing: 1px;
+}
+
+/* Navigation Links (Desktop) */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5em;
+  transition: transform 0.3s ease-in-out;
+}
+
+.nav-links li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.nav-links li a:hover {
+  color: #ffa500;
+}
+
+/* Hamburger Button */
+.nav-toggle {
+  display: none; /* Hidden on desktop by default */
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-left: 20px;
+}
+
+.hamburger {
+  width: 25px;
+  height: 3px;
+  background: #fff;
+  display: block;
+  position: relative;
+  transition: all 0.3s;
+}
+
+.hamburger::before,
+.hamburger::after {
+  content: "";
+  width: 25px;
+  height: 3px;
+  background: #fff;
+  display: block;
+  position: absolute;
+  left: 0;
+  transition: transform 0.3s;
+}
+
+.hamburger::before {
+  top: -8px;
+}
+
+.hamburger::after {
+  top: 8px;
+}
+
+/* ===== Sections ===== */
+section {
+  background: #fff;
+  margin-bottom: 40px;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+section h2 {
+  color: #444;
+  margin-bottom: 15px;
+}
+
+.placeholder {
+  color: #888;
+  font-style: italic;
+}
+
+/* ===== Previous Projects ===== */
+.previous-project-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.project-image {
+  width: 150px;
+  height: 100px;
+  margin-right: 20px;
+  object-fit: contain;
+  border-radius: 5px;
+  border: 2px solid #ddd;
+}
+
+/* ===== Rating Stars ===== */
+.rating-container {
+  display: inline-block;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.star {
+  font-size: 2em;
+  color: #ccc;
+  transition: color 0.2s;
+  margin-right: 0.1em;
+}
+
+.star:hover,
+.star:hover ~ .star {
+  color: #ffa500;
+}
+
+/* ===== Footer ===== */
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  flex-shrink: 0; /* Prevents footer from growing/shrinking */
+}
+
+/* ===== Responsive Media Query ===== */
+@media (max-width: 768px) {
+  /* Show the hamburger button */
+  .nav-toggle {
+    display: block;
+  }
+
+  /* Hide the nav links by default, position them off-canvas */
+  .nav-links {
+    position: absolute;
+    top: 60px; 
+    right: 0;
+    background-color: #444;
+    flex-direction: column;
+    width: auto;
+    padding: 1em;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+  }
+
+  /* When nav-links has .nav-open, slide in */
+  .nav-links.nav-open {
+    transform: translateX(0);
+  }
+
+  .nav-links li {
+    margin-bottom: 10px;
+  }
+}
+
+/* ===== Profile Picture Styling ===== */
+.profile-section {
+  display: flex;           /* Make the container flex to place elements side by side */
+  align-items: center;     /* Vertically center items */
+  justify-content: flex-start; /* Keep everything aligned to the left */
+  text-align: left;        /* Ensure text is left-aligned within the flex container */
+  margin: 20px 0;          /* Some spacing around the profile section */
+}
+
+.profile-pic {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #444;
+  margin-right: 15px;  /* Spacing between the picture and the heading */
+}
+
+.profile-section h1 {
+  margin: 0;            /* Remove default margin so it's aligned nicely */
+  font-size: 1.2rem;    /* Adjust as needed */
+  font-weight: bold;
+}
+
+
