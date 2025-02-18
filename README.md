@@ -12,19 +12,18 @@ With rapid urbanization and industrialization, air pollution has become a major 
 - **Team Member Profiles:** Individual pages (e.g., `ari.html`, `galih.html`, `wallace.html`) highlighting the contributions of each team member.
 
 ## File Structure
-.
-├── index.html         # Main landing page for the web application
-├── script.js          # JavaScript file for dynamic interactions
-├── style.css          # CSS file for styling the website
-├── ari.html           # Profile page for Ari
-├── galih.html         # Profile page for Galih
-├── wallace.html       # Profile page for Wallace
-├── ari.png            # Profile image for Ari
-├── galih.png          # Profile image for Galih
-├── wallace.png        # Profile image for Wallace
-├── TechSpecs.png      # Image displaying technical specifications
-├── air_quality.png    # Image visualizing air quality data
-├── encrypto.png       # Image related to encryption concepts
+- index.html      --> Main landing page for the web application
+- script.js       --> JavaScript file for dynamic interactions
+- style.css       --> CSS file for styling the website
+- ari.html        --> Profile page for Ari
+- galih.html      --> Profile page for Galih
+- wallace.html    --> Profile page for Wallace
+- ari.png         --> Profile image for Ari
+- galih.png       --> Profile image for Galih
+- wallace.png     --> Profile image for Wallace
+- TechSpecs.png   --> Image displaying technical specifications
+- air_quality.png --> Image visualizing air quality data
+- encrypto.png    --> Image related to encryption concepts
 
 
 ## Technologies Used
