@@ -40,4 +40,4 @@ With rapid urbanization and industrialization, air pollution has become a major 
    git clone https://github.com/AriJayaT/week3-wads.git
 
 ## Website's Link
-[Final Project Group Sample Webpage](https://example.com](https://arijayat.github.io/2702403996_asignment2/index.html)
+https://example.com](https://arijayat.github.io/2702403996_asignment2/index.html
